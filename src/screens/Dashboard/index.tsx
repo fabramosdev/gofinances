@@ -9,8 +9,10 @@ import {
     UserGreeting,
     UserName,
     IconButton,
-    Icon
+    Icon,
+    HighlightCards
 } from "./styles";
+import { HighlightCard } from "../../components/HighlightCard";
 
 export function Dashboard(){
     return(
@@ -29,6 +31,11 @@ export function Dashboard(){
                     </IconButton>
                 </UserWrapper>
             </Header>
+            <HighlightCards>
+                <HighlightCard />
+                <HighlightCard />
+                <HighlightCard />
+            </HighlightCards>
         </Container>
     )
 }
